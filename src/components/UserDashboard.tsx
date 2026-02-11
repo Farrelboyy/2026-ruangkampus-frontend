@@ -65,7 +65,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ onLogout, username, isDar
   const handleInitialSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!allCampusRooms.includes(formData.roomName)) {
-      setErrorMessage(language === 'id' ? "Nama ruangan tidak valid. Mohon pilih dari daftar dropdown." : "Invalid room name. Please select from the dropdown list.");
+      setErrorMessage(language === 'id' ? "Nama ruangan tidak valid. Mohon pilih dari daftar ruangan." : "Invalid room name. Please select from the room list.");
       setShowErrorModal(true); return;
     }
     if (!formData.startTime || !formData.endTime) {

@@ -114,7 +114,7 @@ const Login: React.FC<LoginProps> = ({ onLogin, onSwitchToRegister, initialData,
             <div style={{ fontSize: '48px', marginBottom: '10px' }}>🏢</div>
             <h1 style={{ color: colors.brandPrimary, margin: 0, fontSize: '1.8rem', fontWeight: '800' }}>{t.appName}</h1>
             <p style={{ color: colors.textSecondary, marginTop: '8px' }}>
-              {language === 'id' ? 'Silakan masuk ke akun Anda' : 'Please sign in to your account'}
+              {language === 'id' ? 'Silahkan masuk ke akun Anda' : 'Please sign in to your account'}
             </p>
           </div>
           

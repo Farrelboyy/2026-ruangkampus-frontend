@@ -190,7 +190,7 @@ const LoanForm: React.FC<LoanFormProps> = ({
               selected={formData.endTime} 
               onChange={(date: Date | null) => setFormData({...formData, endTime: date})} 
               showTimeSelect timeFormat="HH:mm" timeIntervals={5} 
-              dateFormat={language === 'id' ? "d MMMM yyyy, HH:mm" : "MMMM d, yyyy, HH:mm"} 
+              dateFormat={language === 'id'   ? "d MMMM yyyy, HH:mm" : "MMMM d, yyyy, HH:mm"} 
               placeholderText={language === 'id' ? "Pilih selesai..." : "Select end..."} 
               className="custom-date-input" locale={language === 'id' ? 'id' : 'en'} 
               minDate={formData.startTime || new Date()} 
